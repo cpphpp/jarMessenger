@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="397.0" minWidth="600.0" prefHeight="397.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <AnchorPane prefHeight="25.0" prefWidth="600.0" style="-fx-background-color: #1c0005;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="12.0" layoutY="3.0" prefHeight="18.0" prefWidth="183.0" text="jarMessenger v0.1" textFill="#fff2f2">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </bottom>
+   <left>
+      <AnchorPane maxWidth="162.0" prefHeight="372.0" prefWidth="162.0" style="-fx-background-color: #aa001c;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane maxHeight="81.0" prefHeight="81.0" prefWidth="162.0" style="-fx-background-color: #55000e;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="usernametext" layoutX="70.0" layoutY="14.0" text="Username" textFill="#fff2f2">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Circle fill="#fff2f2" layoutX="35.0" layoutY="41.0" radius="27.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                  <ImageView fitHeight="57.0" fitWidth="53.0" layoutX="9.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/eight.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="quitbutton" layoutX="78.0" layoutY="44.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="42.0" style="-fx-background-color: #FF002B;" text="quit" textFill="#fff2f2">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <ScrollPane hbarPolicy="NEVER" layoutX="39.0" layoutY="82.0" prefHeight="239.0" prefWidth="174.0" style="-fx-background: #aa001c; -fx-background-color: #aa001c;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="81.0">
+               <content>
+                  <VBox fx:id="contactbar" prefHeight="115.0" prefWidth="160.0">
+                     <children>
+                        <AnchorPane prefHeight="54.0" prefWidth="200.0" style="-fx-background-color: #fff2f2;">
+                           <children>
+                              <ImageView fitHeight="38.0" fitWidth="39.0" layoutX="7.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/eight.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="41.0" layoutY="17.0" prefHeight="21.0" prefWidth="77.0" text="Loading..." textFill="#f0002c">
+                                 <font>
+                                    <Font name="Arial Bold" size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children></VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ff002b;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="topbar" layoutX="18.0" layoutY="-71.0" prefHeight="40.0" prefWidth="438.0" style="-fx-background-color: #1c0005;" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="usernametext1" layoutX="10.0" layoutY="12.0" text="Chatter" textFill="#fff2f2">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ScrollPane fx:id="scrollpane" cacheShape="false" hbarPolicy="NEVER" layoutY="39.0" prefHeight="301.0" prefWidth="438.0" scaleShape="false" styleClass="-" stylesheets="@jarCss.css" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+               <content>
+                  <VBox fx:id="messagebox" alignment="TOP_CENTER" prefHeight="222.0" prefWidth="435.0">
+                     <children>
+                        <AnchorPane prefHeight="52.0" prefWidth="435.0" />
+                        <HBox alignment="TOP_CENTER" prefHeight="218.0" prefWidth="435.0">
+                           <children>
+                              <Pane prefHeight="191.0" prefWidth="286.0" style="-fx-background-color: #55000E;">
+                                 <children>
+                                    <Label layoutX="25.0" layoutY="22.0" text="Welcome to jarMessenger!" textFill="#fff2f2">
+                                       <font>
+                                          <Font name="Arial Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="25.0" layoutY="52.0" text="Select a contact from left to start" textFill="#fff2f2" wrapText="true">
+                                       <font>
+                                          <Font name="Arial" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="25.0" layoutY="166.0" text="Candar Labs © 2020" textFill="#fff2f2" wrapText="true">
+                                       <font>
+                                          <Font name="Arial" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <AnchorPane fx:id="inputarea" layoutX="1.0" layoutY="344.0" prefHeight="32.0" prefWidth="438.0" style="-fx-background-color: #55000b;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <TextField fx:id="messagetext" layoutX="3.0" layoutY="4.0" prefHeight="26.0" prefWidth="385.0" promptText="Message..." styleClass="logtext" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="50.0" />
+                  <Button fx:id="sendbutton" layoutX="392.0" layoutY="5.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="42.0" style="-fx-background-color: #FF002B;" text="&gt;" textFill="#fff2f2" AnchorPane.rightAnchor="3.2000000000000455">
+      					<font>
+      						<Font name="Arial Bold" size="12.0" />
+      					</font>
+      				  </Button>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+   </center>
+</BorderPane>

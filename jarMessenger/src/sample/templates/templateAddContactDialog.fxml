@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root type="javafx.scene.control.ScrollPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+	<AnchorPane prefHeight="94.0" prefWidth="270.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+		<children>
+			<Label layoutX="2.0" layoutY="8.0" text="User you want to add:" />
+			<TextField fx:id="contactname" layoutX="127.0" layoutY="3.0" prefHeight="26.0" prefWidth="134.0" styleClass="logtext" stylesheets="@../jarCss.css" />
+			<Label fx:id="maintext" layoutX="2.0" layoutY="38.0" />
+		</children>
+	</AnchorPane>
+</fx:root>

@@ -1,0 +1,14 @@
+.logtext {
+	-fx-background-color:  #303030;
+	-fx-text-inner-color:  #9fb29f;
+	
+}
+
+.scroll-pane{
+   -fx-background-color:transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+	
+}

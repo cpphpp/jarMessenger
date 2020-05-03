@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+	<Label layoutX="17.0" layoutY="14.0" prefHeight="22.0" prefWidth="109.0" text="Register" textFill="#fff1f1" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="102.0">
+	<font>
+		<Font name="Arial Bold" size="18.0" />
+	</font>
+	</Label>
+	<TextField fx:id="username" layoutX="14.0" layoutY="57.0" prefHeight="26.0" prefWidth="197.0" promptText="username" style="-fx-background-color: #303030;" styleClass="logtext" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+	<TextField fx:id="password" layoutX="15.0" layoutY="94.0" prefHeight="26.0" prefWidth="197.0" promptText="password" style="-fx-background-color: #303030;" styleClass="logtext" />
+	<TextField fx:id="repassword" layoutX="15.0" layoutY="130.0" prefHeight="26.0" prefWidth="197.0" promptText="re-password" style="-fx-background-color: #303030;" styleClass="logtext" />
+	<Button fx:id="logbutton" layoutX="15.0" layoutY="173.0" mnemonicParsing="false" style="-fx-background-color: #ff002b;" text="Register" textFill="#fff7f7" />
+	<Label fx:id="backbutton" layoutX="81.0" layoutY="180.0" prefHeight="18.0" prefWidth="131.0" text="Back" textFill="#b29595" />
+</fx:root>
